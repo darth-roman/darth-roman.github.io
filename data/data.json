@@ -1,0 +1,44 @@
+{
+    "randoms":[
+        {
+            "id": "rl-0",
+            "title": "Bash Scripts I Wrote",
+            "link": "https://github.com/darth-roman/bash-scripts"
+        },
+        {
+            "id": "rl-1",
+            "title": "Arduino Repo - Just for fun",
+            "link": "https://github.com/darth-roman/arduino-notes"
+        }
+    ],
+    "socials":[
+        {
+            "id": "sl-0",
+            "name": "github",
+            "link": "https://github.com/darth-roman/",
+            "short": "@darth-roman",
+            "class": "gh"
+        },
+        {
+            "id": "sl-1",
+            "name": "instagram",
+            "link": "https://www.instagram.com/laboratxii/",
+            "short": "@laboratxii",
+            "class": "ig"
+        },
+        {
+            "id": "sl-2",
+            "name": "linkedin",
+            "link": "https://www.linkedin.com/in/chouchane-abderrahmane-592229287/",
+            "short": "Chouchane Abderrahmane",
+            "class": "lki"
+        },
+        {
+            "id": "sl-2",
+            "name": "gmail",
+            "link": "chouchane.louai20@gmail.com",
+            "short": "roman@gmail",
+            "class": "gm"
+        }
+    ]
+}
