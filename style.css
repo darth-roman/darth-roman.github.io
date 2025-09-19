@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root{
+    /*Variables*/
+    /* The colors are AI Generated, just saying lol */ 
+    /* The Colors are supposed to be Roman Empire through history, at least as asked in the prompt*/
+  /* 🟥 Core Imperial Colors */
+  --imperial-red-100: #F2D6D7;
+  --imperial-red-300: #B34042;
+  --imperial-red-500: #7B1113; /* base */
+  --imperial-red-700: #530B0D;
+  --imperial-red-900: #2E0506;
+
+  --tyrian-purple-100: #E4C9D6;
+  --tyrian-purple-300: #99426A;
+  --tyrian-purple-500: #66023C; /* base */
+  --tyrian-purple-700: #400126;
+  --tyrian-purple-900: #1F0012;
+
+  --gold-aureus-100: #FFF4C2;
+  --gold-aureus-300: #E6C85E;
+  --gold-aureus-500: #C9B037; /* base */
+  --gold-aureus-700: #8F7F25;
+  --gold-aureus-900: #4A4213;
+
+  /* 🏛 Architectural & Cultural Hues */
+  --marble-white-100: #FFFFFF;
+  --marble-white-300: #F7F6F4;
+  --marble-white-500: #E8E6E1; /* base */
+  --marble-white-700: #CFCBC4;
+  --marble-white-900: #A09C95;
+
+  --travertine-beige-100: #F5EFE6;
+  --travertine-beige-300: #DED2BA;
+  --travertine-beige-500: #CBBFA4; /* base */
+  --travertine-beige-700: #A18C6E;
+  --travertine-beige-900: #5C5140;
+
+  --bronze-patina-100: #D9D7D3;
+  --bronze-patina-300: #9B958C;
+  --bronze-patina-500: #6E675F; /* base */
+  --bronze-patina-700: #47423D;
+  --bronze-patina-900: #23201D;
+
+  /* ⚔ Military & Expansion Colors */
+  --legionary-iron-100: #D3D5D8;
+  --legionary-iron-300: #6E7379;
+  --legionary-iron-500: #43464B; /* base */
+  --legionary-iron-700: #2A2D30;
+  --legionary-iron-900: #121314;
+
+  --olive-green-100: #D8DEC9;
+  --olive-green-300: #9DAA7B;
+  --olive-green-500: #6B7A4F; /* base */
+  --olive-green-700: #495235;
+  --olive-green-900: #262B1A;
+
+  --mediterranean-blue-100: #D2D6E5;
+  --mediterranean-blue-300: #6D7BA5;
+  --mediterranean-blue-500: #355070; /* base */
+  --mediterranean-blue-700: #23334B;
+  --mediterranean-blue-900: #111827;
+
+}
+
+*{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    list-style: none;
+
+    font-family: "Fira Code", monospace;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    background: var(--legionary-iron-900);
+    color: var(--gold-aureus-100);
+}
+
+header {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav{
+    width: 70%;
+}
+
+.main-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+ul a{
+    color: var(--bronze-patina-100);
+}
+
+
+
+/* ASCII ART SHIIIIIT   */
+.bg-ascii-1{
+    color: var(--imperial-red-300);
+}
+.bg-ascii-2{
+    color: var(--gold-aureus-300);
+}
+.bg-ascii-3{
+    color: var(--olive-green-500);
+}
+.bg-ascii-4{
+    color: var(--mediterranean-blue-500);
+}
+.bg-ascii-5{
+    color: var(--tyrian-purple-300);
+}
+
+
