@@ -306,19 +306,19 @@ h3.highlight{
 }
 
 /* ASCII ART SHIIIIIT   */
-.bg-ascii-1{
+.bg-ascii-5{
     color: var(--imperial-red-300);
 }
-.bg-ascii-2{
+.bg-ascii-3{
     color: var(--gold-aureus-300);
 }
-.bg-ascii-3{
+.bg-ascii-4{
     color: var(--olive-green-500);
 }
-.bg-ascii-4{
+.bg-ascii-2{
     color: var(--mediterranean-blue-500);
 }
-.bg-ascii-5{
+.bg-ascii-1{
     color: var(--tyrian-purple-300);
 }
 
