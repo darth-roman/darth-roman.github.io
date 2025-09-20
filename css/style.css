@@ -171,6 +171,10 @@ footer {
 
 }
 
+.bg-olive{
+    background: var(--olive-green-700);
+}
+
 .highlight{
     max-width: fit-content;
     z-index: -1;
@@ -235,6 +239,11 @@ h3.highlight{
     background: linear-gradient(45deg, var(--imperial-red-700), var(--imperial-red-300));
     animation: fadeIn 0.3s ease-in 1 forwards;
     transition: box-shadow 0.2s ease-in-out;
+}
+
+.random-item small{
+    display: flex;
+    gap: 0.5rem;
 }
 
 .random-item *{

@@ -4,19 +4,22 @@
             "id": "rl-0",
             "title": "Bash Scripts I Wrote",
             "link": "https://github.com/darth-roman/bash-scripts",
-            "techs_used": "Bash"
+            "techs_used": "Bash",
+            "status": "Continous"
         },
         {
             "id": "rl-1",
             "title": "Arduino Repo - Just for fun",
             "link": "https://github.com/darth-roman/arduino-notes",
-            "techs_used": "C-like Arduino lang"
+            "techs_used": "C-like Arduino lang",
+            "status": "Continous"
         },
         {
             "id": "rl-2",
             "title": "This Website source code",
             "link": "https://github.com/darth-roman/darth-roman.github.io",
-            "techs_used": "HTML, CSS, JS"
+            "techs_used": "HTML, CSS, JS",
+            "status": "Done"
         }
     ],
     "socials":[
