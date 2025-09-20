@@ -256,7 +256,6 @@ h3.highlight{
 
 #loadmore{
     transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-    display: none;
 }
 
 #loadmore:hover {
