@@ -237,6 +237,14 @@ h3.highlight{
     transition: box-shadow 0.2s ease-in-out;
 }
 
+.random-item *{
+    margin: 0.5rem 0;
+}
+
+.random-item p{
+    padding: 0 0.2rem;
+}
+
 .random-item:hover{
     box-shadow: 0.3rem 0.3rem var(--gold-aureus-300);
 }
@@ -244,6 +252,17 @@ h3.highlight{
 .random-item a{
     margin: 1rem 0;
     color: var(--bronze-patina-100);
+}
+
+#loadmore{
+    transition: color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: none;
+}
+
+#loadmore:hover {
+    color: var(--gold-aureus-700);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /*connect page*/

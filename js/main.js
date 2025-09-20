@@ -17,15 +17,23 @@ async function fetchSocials() {
     return results.socials
 }
 
-async function appendRandoms(container){
+async function appendRandoms(container, renderCount){
     const randoms = await fetchRandoms()
-    
-    randoms.forEach((random) => {
+
+    if(renderCount>randoms.length) renderCount = randoms.length
+
+    const renderedRandoms = randoms.slice(0, renderCount)
+    container.innerHTML = ""
+
+    renderedRandoms.forEach((random) => {
         container.innerHTML += 
         `<div class="random-item">
             <h2>
                 ${random.title}
             </h2>
+            <small>
+                <p class="highlight bg-gold"><b>${random.techs_used}</b></p>
+            </small>
             <a href="${random.link}" target="_blank">Click me</a>
         </div>`
     });
@@ -45,10 +53,18 @@ async function appendSocials(container){
 }
 
 window.addEventListener("load", async function(){
-
+    
     if(window.location.pathname === "/pages/randoms.html"){
+        const laodMore = this.document.querySelector("#loadmore")
+        laodMore.attributeStyleMap.set("display", "block")
         const randomsContainter = this.document.querySelector(".randoms-container")
-        await appendRandoms(randomsContainter)
+        let defaultSLice = 3
+        laodMore.addEventListener("click", async function(){
+            defaultSLice += 3
+            await appendRandoms(randomsContainter, defaultSLice)
+            return
+        })
+        await appendRandoms(randomsContainter, defaultSLice)
     }
 
     if(window.location.pathname === "/pages/connect.html"){
