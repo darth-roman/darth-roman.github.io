@@ -40,7 +40,10 @@ async function appendRandoms(container, renderCount){
                 <p class="highlight bg-gold"><b>${random.techs_used}</b></p>
                 <p class="highlight bg-olive status"><b>${random.status}</b></p>
             </small>
-            <a href="${random.link}" target="_blank">Click me</a>
+            <div>
+                <a href="${random.link}" target="_blank">Click me</a>
+                ${random.readme_link ? `<a href="${random.readme_link}" target="_blank">Read me</a>` : ""}
+            </div>
         </div>`
     });
     

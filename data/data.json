@@ -2,22 +2,33 @@
     "randoms":[
         {
             "id": "rl-0",
+            "title": "gen-express Script",
+            "link": "https://github.com/darth-roman/bash-scripts/blob/main/gen-express.sh",
+            "readme_link": "https://github.com/darth-roman/bash-scripts?tab=readme-ov-file#gen-express",
+            "techs_used": "Bash",
+            "status": "Done"
+        },
+        {
+            "id": "rl-1",
             "title": "Bash Scripts I Wrote",
             "link": "https://github.com/darth-roman/bash-scripts",
+            "readme_link": "",
             "techs_used": "Bash",
             "status": "Continous"
         },
         {
-            "id": "rl-1",
+            "id": "rl-2",
             "title": "Arduino Repo - Just for fun",
             "link": "https://github.com/darth-roman/arduino-notes",
+            "readme_link": "",
             "techs_used": "C-like Arduino lang",
             "status": "Continous"
         },
         {
-            "id": "rl-2",
+            "id": "rl-3",
             "title": "This Website source code",
             "link": "https://github.com/darth-roman/darth-roman.github.io",
+            "readme_link": "",
             "techs_used": "HTML, CSS, JS",
             "status": "Done"
         }
