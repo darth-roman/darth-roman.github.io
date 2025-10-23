@@ -71,7 +71,7 @@ async function appendSocials(container){
         container.innerHTML += 
         `<div class="social-link ${social.class}">
             <p>${social.name}: </p>
-            <a href="${social.link}">${social.short}</a>
+            <a href="${social.link}" target="_blank">${social.short}</a>
         </div>`
     });
 }
