@@ -183,6 +183,14 @@ h3.highlight{
     padding: 2px;
 }
 
+/* Downloads */
+#downloads a{
+    color: var(--gold-aureus-100);
+    padding: 0.3rem;
+    background: linear-gradient(45deg, var(--mediterranean-blue-500), var(--mediterranean-blue-700));
+
+}
+
 
 
 @keyframes fadeIn {

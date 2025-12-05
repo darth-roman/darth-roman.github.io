@@ -76,8 +76,19 @@ async function appendSocials(container){
     });
 }
 
+// Download the resume feature
+function downloadResume(downloadLink){
+    downloadLink.href = "data/Chouchane_Louai_12_2025.pdf"
+    downloadLink.download = "Chouchane_Louai_12_2025.pdf"
+}
+
+// Main-like block
 window.addEventListener("DOMContentLoaded", async function(){
 
+    if(window.location.pathname === "/"){
+        const downloadLink = this.document.querySelector("#downloads a")
+        downloadResume(downloadLink)
+    }
     
     
     if(window.location.pathname === "/pages/randoms.html"){
@@ -107,5 +118,8 @@ window.addEventListener("DOMContentLoaded", async function(){
         const socialsContainter = document.querySelector(".socials")
         await appendSocials(socialsContainter)
     }
+
+    // const downloadLink = document.querySelector("#downloads a")
+
 }
 )
