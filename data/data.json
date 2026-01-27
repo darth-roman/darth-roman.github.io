@@ -1,10 +1,20 @@
 {
     "randoms":[
         {
+            "id": "rl-5",
+            "title": "PWA Manifest Generator",
+            "link": "https://github.com/darth-roman/pwa-manifest-generator",
+            "readme_link": "",
+            "try_it": "https://darth-roman.github.io/pwa-manifest-generator/",
+            "techs_used": "HTML, CSS, JS",
+            "status": "Continous"
+        },
+        {
             "id": "rl-0",
             "title": "gh-ssh-gen Script",
             "link": "https://github.com/darth-roman/bash-scripts/blob/main/gh-ssh-gen.sh",
             "readme_link": "https://github.com/darth-roman/bash-scripts?tab=readme-ov-file#gh-ssh-gen",
+            "try_it": "",
             "techs_used": "Bash",
             "status": "Done"
         },
@@ -13,6 +23,7 @@
             "title": "gen-express Script",
             "link": "https://github.com/darth-roman/bash-scripts/blob/main/gen-express.sh",
             "readme_link": "https://github.com/darth-roman/bash-scripts?tab=readme-ov-file#gen-express",
+            "try_it": "",
             "techs_used": "Bash",
             "status": "Done"
         },
@@ -21,6 +32,7 @@
             "title": "Bash Scripts I Wrote",
             "link": "https://github.com/darth-roman/bash-scripts",
             "readme_link": "",
+            "try_it": "",
             "techs_used": "Bash",
             "status": "Continous"
         },
@@ -29,6 +41,7 @@
             "title": "Arduino Repo - Just for fun",
             "link": "https://github.com/darth-roman/arduino-notes",
             "readme_link": "",
+            "try_it": "",
             "techs_used": "C-like Arduino lang",
             "status": "Continous"
         },
@@ -37,6 +50,7 @@
             "title": "This Website source code",
             "link": "https://github.com/darth-roman/darth-roman.github.io",
             "readme_link": "",
+            "try_it": "",
             "techs_used": "HTML, CSS, JS",
             "status": "Done"
         }

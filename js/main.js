@@ -3,7 +3,7 @@ const spans = document.querySelectorAll("code span")
 let RANDOMS = 0
 
 for(let i=0; i<spans.length; i++){
-    spans[i].style.animation = `fadeIn 500ms ${0.2*i}s 1 forwards`
+    spans[i].style.animation = `fadeIn 500ms ${.2*i}s 1 forwards`
 }
 
 async function fetchRandoms() {
@@ -43,6 +43,7 @@ async function appendRandoms(container, renderCount){
             <div>
                 <a href="${random.link}" target="_blank">Click me</a>
                 ${random.readme_link ? `<a href="${random.readme_link}" target="_blank">Read me</a>` : ""}
+                ${random.try_it ? `<a href="${random.try_it}" target="_blank">Demo</a>` : ""}
             </div>
         </div>`
     });
