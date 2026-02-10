@@ -8,10 +8,11 @@
     <meta property="og:url" content="https://darth-roman.github.io">
     <meta property="og:image" content="https://darth-roman.github.io/imgs/roomer.jpg">
     <meta property="og:description" content="This is my very static, very dynamic personal webpage, please hire me, i need to pay my debts">
-
+    
     <link rel="shortcut icon" href="imgs/favicon.png" type="image/png">
     <title>Roman | 🍋</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" type="module" defer></script>
 </head>
 <body>
     <div id="ascii-art">
@@ -44,44 +45,75 @@
     </header>
 
     <main>
-        <div id="intro">
-            <div id="img">
-                <img src="imgs/img.webp" alt="My Cool Image" loading="lazy">
-            </div>
-            <div class="desc">
-                <p>
-                    Oi, Whats up, I am <span class="highlight bg-gold">Abderrahmane</span>, but you can call me <span class="highlight bg-imperial">Roman</span>
-                </p>
-                <p>
-                    I am essentially a <span class="highlight bg-mediterranean">Backend Dev</span> Wannabe, but i do frontend because i need the money
-                </p>
-                <p>I am a:</p>
-                <ul>
-                    <li>Web Dev Instructor</li>
-                    <li>Pharmacy Student <span class="highlight bg-imperial">(and no, i wont hand out "real-drugs" to you)</span></li>
-                    <li>Redhead by mistake</li>
-                    <li>Starwars fan</li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="skills">
-            <h2>Skills</h2>
-            <h3 class="highlight bg-gold">Main()</h3>
-            <p>
-                HTML, CSS, SCSS, JavaScript, NodeJS, ExpressJS, MongoDB, MySQL
-            </p>
-            <h3 class="highlight bg-imperial">Others()</h3>
-            <p>
-                Bash, Arduino stuff, Java
-            </p>
-        </div>
-
-        <div id="downloads">
-            <a href="#" class="highlight bg-imperial">Download My CV</a>
-        </div>
+        <intro-comp></intro-comp>
+        <skills-comp></skills-comp>
+        <downloads-comp></downloads-comp>
     </main>
 
+    <!-- Templates Start-->
+     <template id="random-item">
+         <div class="random-item">
+            <h2>
+                random.title
+            </h2>
+            <small>
+                <p class="highlight bg-gold"><b>random.techs_used</b></p>
+                <p class="highlight bg-olive status"><b>random.status</b></p>
+            </small>
+            <div>
+                <a href="${random.link}" target="_blank">Click me</a>
+                ${random.readme_link ? `<a href="${random.readme_link}" target="_blank">Read me</a>` : ""}
+                ${random.try_it ? `<a href="${random.try_it}" target="_blank">Demo</a>` : ""}
+            </div>
+        </div>
+     </template>
+    <!-- Templates Ends -->
+
+    <!-- Main Templates Start -->
+        <template id="intro-comp">
+            <div id="intro">
+                <div id="img">
+                    <img src="imgs/img.webp" alt="My Cool Image" loading="lazy">
+                </div>
+                <div class="desc">
+                    <p>
+                        Oi, Whats up, I am <span class="highlight bg-gold">Abderrahmane</span>, but you can call me <span class="highlight bg-imperial">Roman</span>
+                    </p>
+                    <p>
+                        I am essentially a <span class="highlight bg-mediterranean">Backend Dev</span> Wannabe, but i do frontend because i need the money
+                    </p>
+                    <p>I am a:</p>
+                    <ul>
+                        <li>Web Dev Instructor</li>
+                        <li>Pharmacy Student <span class="highlight bg-imperial">(and no, i wont hand out "real-drugs" to you)</span></li>
+                        <li>Redhead by mistake</li>
+                        <li>Starwars fan</li>
+                    </ul>
+                </div>
+            </div>
+        </template>
+
+        <template id="skills-comp">
+            <div id="skills">
+                <h2>Skills</h2>
+                <h3 class="highlight bg-gold">Main()</h3>
+                <p>
+                    HTML, CSS, SCSS, JavaScript, NodeJS, ExpressJS, MongoDB, MySQL
+                </p>
+                <h3 class="highlight bg-imperial">Others()</h3>
+                <p>
+                    Bash, Arduino stuff, Java
+                </p>
+            </div>
+        </template>
+
+        <template id="downloads-comp">
+            <div id="downloads">
+                <a href="#" class="highlight bg-imperial">Download My CV</a>
+            </div>
+        </template>
+
+        <!-- Main Template End -->
     <footer>
         Crocheted with <b>Caffeine</b> by <a href="https://github.com/darth-roman" target="_blank"><span class="highlight bg-gold">@darth-roman</span></a>
         <div id="credits">
@@ -89,6 +121,5 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
 </body>
 </html>

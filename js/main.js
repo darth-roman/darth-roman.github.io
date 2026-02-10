@@ -1,3 +1,7 @@
+import { Intro } from "../components/Intro.js"
+import { Skills } from "../components/Skills.js"
+import { DownloadButton } from "../components/DownloadButton.js"
+
 const codeblock = document.querySelector("code")
 const spans = document.querySelectorAll("code span")
 let RANDOMS = 0
@@ -84,43 +88,46 @@ function downloadResume(downloadLink){
 }
 
 // Main-like block
-window.addEventListener("DOMContentLoaded", async function(){
+window.addEventListener("DOMContentLoaded", () => {
+    // document.querySelector("main").appendChild(new Intro())
+})
 
-    if(window.location.pathname === "/"){
-        const downloadLink = this.document.querySelector("#downloads a")
-        downloadResume(downloadLink)
-    }
+// window.addEventListener("DOMContentLoaded", async function(){
+
+//     if(window.location.pathname === "/"){
+//         const downloadLink = this.document.querySelector("#downloads a")
+//         downloadResume(downloadLink)
+//     }
     
     
-    if(window.location.pathname === "/pages/randoms.html"){
-        const laodMore = this.document.querySelector("#loadmore")
-        laodMore.attributeStyleMap.set("display", "block")
+//     if(window.location.pathname === "/pages/randoms.html"){
+//         const laodMore = this.document.querySelector("#loadmore")
+//         laodMore.attributeStyleMap.set("display", "block")
 
-        const randomsContainter = this.document.querySelector(".randoms-container")
+//         const randomsContainter = this.document.querySelector(".randoms-container")
         
-        let defaultSLice = 3
+//         let defaultSLice = 3
 
-        laodMore.addEventListener("click", async function(){
-            defaultSLice += 3
-            await appendRandoms(randomsContainter, defaultSLice)
-            whatsLeftComponent(RANDOMS, defaultSLice)
+//         laodMore.addEventListener("click", async function(){
+//             defaultSLice += 3
+//             await appendRandoms(randomsContainter, defaultSLice)
+//             whatsLeftComponent(RANDOMS, defaultSLice)
 
-            if(RANDOMS-defaultSLice<0) {
-                whatsLeftComponent(RANDOMS, defaultSLice)
-                return
-            }
-            return
-        })
-        await appendRandoms(randomsContainter, defaultSLice)
-        whatsLeftComponent(RANDOMS, defaultSLice)
-    }
+//             if(RANDOMS-defaultSLice<0) {
+//                 whatsLeftComponent(RANDOMS, defaultSLice)
+//                 return
+//             }
+//             return
+//         })
+//         await appendRandoms(randomsContainter, defaultSLice)
+//         whatsLeftComponent(RANDOMS, defaultSLice)
+//     }
 
-    if(window.location.pathname === "/pages/connect.html"){
-        const socialsContainter = document.querySelector(".socials")
-        await appendSocials(socialsContainter)
-    }
+//     if(window.location.pathname === "/pages/connect.html"){
+//         const socialsContainter = document.querySelector(".socials")
+//         await appendSocials(socialsContainter)
+//     }
 
-    // const downloadLink = document.querySelector("#downloads a")
+//     // const downloadLink = document.querySelector("#downloads a")
 
-}
-)
+// })
