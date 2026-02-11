@@ -51,22 +51,22 @@
     </main>
 
     <!-- Templates Start-->
-     <template id="random-item">
-         <div class="random-item">
-            <h2>
-                random.title
-            </h2>
-            <small>
-                <p class="highlight bg-gold"><b>random.techs_used</b></p>
-                <p class="highlight bg-olive status"><b>random.status</b></p>
-            </small>
-            <div>
-                <a href="${random.link}" target="_blank">Click me</a>
-                ${random.readme_link ? `<a href="${random.readme_link}" target="_blank">Read me</a>` : ""}
-                ${random.try_it ? `<a href="${random.try_it}" target="_blank">Demo</a>` : ""}
+        <template id="random-item">
+            <div class="random-item">
+                <h2>
+                    random.title
+                </h2>
+                <small>
+                    <p class="highlight bg-gold"><b>random.techs_used</b></p>
+                    <p class="highlight bg-olive status"><b>random.status</b></p>
+                </small>
+                <div>
+                    <a href="${random.link}" target="_blank">Click me</a>
+                    ${random.readme_link ? `<a href="${random.readme_link}" target="_blank">Read me</a>` : ""}
+                    ${random.try_it ? `<a href="${random.try_it}" target="_blank">Demo</a>` : ""}
+                </div>
             </div>
-        </div>
-     </template>
+        </template>
     <!-- Templates Ends -->
 
     <!-- Main Templates Start -->
@@ -112,14 +112,18 @@
                 <a href="#" class="highlight bg-imperial">Download My CV</a>
             </div>
         </template>
-
         <!-- Main Template End -->
-    <footer>
-        Crocheted with <b>Caffeine</b> by <a href="https://github.com/darth-roman" target="_blank"><span class="highlight bg-gold">@darth-roman</span></a>
-        <div id="credits">
-            &copy; Chouchane Louai Abderrahmane - Roman
-        </div>
-    </footer>
 
+        <footer>
+            <footer-comp></footer-comp>
+        </footer>
+
+        <!-- Footer Template -->
+        <template id="footer-comp">
+            Crocheted with <b>Caffeine</b> by <a href="https://github.com/darth-roman" target="_blank"><span class="highlight bg-gold">@darth-roman</span></a>
+            <div id="credits">
+                &copy; Chouchane Louai Abderrahmane - Roman
+            </div>
+        </template>
 </body>
 </html>

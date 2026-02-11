@@ -1,6 +1,7 @@
 import { Intro } from "../components/Intro.js"
 import { Skills } from "../components/Skills.js"
 import { DownloadButton } from "../components/DownloadButton.js"
+import { Footer } from "../components/Footer.js"
 
 const codeblock = document.querySelector("code")
 const spans = document.querySelectorAll("code span")
