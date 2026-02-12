@@ -1,8 +1,10 @@
-import { Intro } from "../components/Intro.js"
-import { Skills } from "../components/Skills.js"
-import { DownloadButton } from "../components/DownloadButton.js"
-import { Footer } from "../components/Footer.js"
+import { ConnectPage } from "../components/ConnectPage.js"
+import {Footer} from "../components/Footer.js"
+import { HomePage } from "../components/HomePage.js"
+import { RandomsPage } from "../components/RandomPage.js"
+import { router } from "./router.js"
 
+window.router = router
 const codeblock = document.querySelector("code")
 const spans = document.querySelectorAll("code span")
 let RANDOMS = 0
@@ -82,16 +84,20 @@ async function appendSocials(container){
     });
 }
 
+window.addEventListener("DOMContentLoaded", () => {
+    router.init()
+})
+
 // Download the resume feature
-function downloadResume(downloadLink){
-    downloadLink.href = "data/Chouchane_Louai_12_2025.pdf"
-    downloadLink.download = "Chouchane_Louai_12_2025.pdf"
-}
+// function downloadResume(downloadLink){
+//     downloadLink.href = "data/Chouchane_Louai_12_2025.pdf"
+//     downloadLink.download = "Chouchane_Louai_12_2025.pdf"
+// }
 
 // Main-like block
-window.addEventListener("DOMContentLoaded", () => {
-    // document.querySelector("main").appendChild(new Intro())
-})
+// window.addEventListener("DOMContentLoaded", () => {
+//     // document.querySelector("main").appendChild(new Intro())
+// })
 
 // window.addEventListener("DOMContentLoaded", async function(){
 
