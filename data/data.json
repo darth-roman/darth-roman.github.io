@@ -1,6 +1,15 @@
 {
     "randoms":[
         {
+            "id": "rl-6",
+            "title": "Pain Prediction App - ML",
+            "link": "https://github.com/darth-roman/pain-prediction-flask-web/tree/server-side-render",
+            "readme_link": "",
+            "try_it": "https://pain-prediction-flask-web.onrender.com",
+            "techs_used": "Python, Flask, JS",
+            "status": "Continous"
+        },
+        {
             "id": "rl-5",
             "title": "PWA Manifest Generator",
             "link": "https://github.com/darth-roman/pwa-manifest-generator",

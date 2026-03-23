@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-@layer reset, layout, components, media;
+@layer reset, layout, components, media, light-theme;
 
 :root{
     /*Variables*/
@@ -62,11 +62,18 @@
   --mediterranean-blue-500: #355070; /* base */
   --mediterranean-blue-700: #23334B;
   --mediterranean-blue-900: #111827;
-  
+
+  --main-bg-color: var(--legionary-iron-900);
+  --main-txt-color: var(--gold-aureus-100);
+  --txt-hover: var(--gold-aureus-300);
+  --box-shadow-color: var(--gold-aureus-300);
+  --link-text-color: var(--gold-aureus-100);
+  --link-text-hover: var(--gold-aureus-300);
+  --text-color: var(--bronze-patina-900);
+  --text-color-lighter: var(--gold-aureus-100);
 }
 
 @layer reset{
-
     *{
         padding: 0rem;
         margin: 0rem;
@@ -85,8 +92,8 @@
         align-items: center;
         justify-content: start;
         
-        background: var(--legionary-iron-900);
-        color: var(--gold-aureus-100);
+        background: var(--main-bg-color);
+        color: var(--main-txt-color);
     }
     
     header ul{
@@ -120,15 +127,18 @@
 
     .bg-mediterranean{
         background: var(--mediterranean-blue-700);
+        color: var(--text-color-lighter);
     }
 
     .bg-imperial{
         background: var(--imperial-red-300);
+        color: var(--text-color-lighter);
 
     }
 
     .bg-olive{
         background: var(--olive-green-700);
+        color: var(--text-color-lighter);
     }
 
     .highlight{
@@ -167,13 +177,14 @@
     }
 
     header a:hover{
-        color: var(--gold-aureus-300);
+        color: var(--link-text-hover);
     }
 
     /*randoms page*/
     .randoms-container, .socials{
         display: flex;
         flex-direction: column;
+        color: var(--text-color-lighter);
 
     }
 
@@ -199,7 +210,7 @@
     }
 
     .random-item:hover{
-        box-shadow: 0.3rem 0.3rem var(--gold-aureus-300);
+        box-shadow: 0.3rem 0.3rem var(--box-shadow-color);
     }
 
     .random-item a{
@@ -210,7 +221,7 @@
 
 
     ul a, footer a{
-        color: var(--bronze-patina-100);
+        color: var(--link-text-color);
     }
 
 
@@ -343,6 +354,44 @@
             font-size: 0.8rem;
             text-align: center;
         }
+    }
+}
+
+@layer light-theme{
+    [data-theme="light"]{
+        --main-bg-color: var(--gold-aureus-100);
+        --main-txt-color: var(--bronze-patina-900);
+        --txt-hover: var(--gold-aureus-300);
+        --box-shadow-color: var(--bronze-patina-900);
+        --link-text-color: var(--legionary-iron-500);
+        --link-text-hover: var(--legionary-iron-900);
+        --text-color: var(--bronze-patina-900);
+        --text-color-lighter: var(--gold-aureus-100);
+
+    }
+
+    [data-theme="imperial"]{
+        --main-bg-color: var(--imperial-red-900);
+        --main-txt-color: var(--gold-aureus-100);
+        --txt-hover: var(--gold-aureus-300);
+        --box-shadow-color: var(--imperial-red-100);
+        --link-text-color: var(--imperial-red-100);
+        --link-text-hover: var(--imperial-red-300);
+        --text-color: var(--gold-aureus-100);
+        --text-color-lighter: var(--bronze-patina-100);
+
+    }
+
+    [data-theme="mediteranian"]{
+        --main-bg-color: var(--mediterranean-blue-900);
+        --main-txt-color: var(--gold-aureus-100);
+        --txt-hover: var(--gold-aureus-300);
+        --box-shadow-color: var(--imperial-red-100);
+        --link-text-color: var(--imperial-red-100);
+        --link-text-hover: var(--imperial-red-300);
+        --text-color: var(--gold-aureus-100);
+        --text-color-lighter: var(--gold-aureus-100);
+
     }
 }
 

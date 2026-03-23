@@ -1,6 +1,17 @@
 const codeblock = document.querySelector("code")
 const spans = document.querySelectorAll("code span")
 let RANDOMS = 0
+let localStore = window.localStorage
+const theme = localStore.getItem("theme")
+
+let themeArrayIndex = 0
+const themes = [
+    "dark",
+    "light",
+    "mediteranian",
+    "imperial"
+]
+
 
 for(let i=0; i<spans.length; i++){
     spans[i].style.animation = `fadeIn 500ms ${.2*i}s 1 forwards`
@@ -85,6 +96,18 @@ function downloadResume(downloadLink){
 
 // Main-like block
 window.addEventListener("DOMContentLoaded", async function(){
+
+    if(!theme) localStore.setItem("theme", "light")
+    this.document.querySelector("body").dataset.theme = theme
+
+    this.window.addEventListener("dblclick", (e) => {
+        console.log(e);
+        
+        this.document.querySelector("body").dataset.theme = themes[themeArrayIndex]
+        localStore.setItem("theme", themes[themeArrayIndex])
+        themeArrayIndex = (themeArrayIndex + 1) % themes.length
+
+    })
 
     if(window.location.pathname === "/"){
         const downloadLink = this.document.querySelector("#downloads a")
