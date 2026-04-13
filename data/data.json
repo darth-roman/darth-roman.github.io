@@ -1,6 +1,15 @@
 {
     "randoms":[
         {
+            "id": "rl-7",
+            "title": "(Model, Controller, Router) Generator - ExpressJS",
+            "link": "https://github.com/darth-roman/go-projects/tree/main/mrc-gen",
+            "readme_link": "https://github.com/darth-roman/go-projects/blob/main/README.md#gen-mrc",
+            "try_it": "",
+            "techs_used": "Golang",
+            "status": "Done"
+        },
+        {
             "id": "rl-6",
             "title": "Pain Prediction App - ML",
             "link": "https://github.com/darth-roman/pain-prediction-flask-web/tree/server-side-render",
