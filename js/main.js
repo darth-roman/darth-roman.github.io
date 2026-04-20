@@ -90,8 +90,9 @@ async function appendSocials(container){
 
 // Download the resume feature
 function downloadResume(downloadLink){
-    downloadLink.href = "data/Chouchane_Louai_12_2025.pdf"
-    downloadLink.download = "Chouchane_Louai_12_2025.pdf"
+    const fileName = "Chouchane_Louai_04_2026"
+    downloadLink.href = `data/${fileName}.pdf`
+    downloadLink.download = `${fileName}.pdf`
 }
 
 // Main-like block
